@@ -14,3 +14,22 @@ header {
     border-radius: 15px;
     padding: 30px;
 }
+
+h1 {
+    background-color: black;
+    padding: 10px 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+p {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    padding: 15px;
+    background-color: rgb(4, 156, 156);
+    width: 250px;
+}
+
+section {
+    text-align: left;
+}
