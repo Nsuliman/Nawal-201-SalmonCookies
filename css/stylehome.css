@@ -1,0 +1,177 @@
+body {
+
+    background-color: rgb(224, 164, 72);
+    backface-visibility: visible;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  position: sticky;
+  background: rgb(189, 129, 61);
+  height: 150px;
+  background-position: center;
+  width: 100%;
+  border: 3px solid rgb(177, 99, 11);
+  border-radius: 10px;
+  border-style: groove;
+}
+
+nav {
+  width: 960px;
+  margin: 0px auto;
+}
+
+header p {
+  position: fixed;
+  margin: 0px auto;
+  align-content: center;
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 15px;
+  text-shadow: coral;
+  font-weight: bolder;
+  background-color: plum;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 60px;
+  font-family: cursive;
+  margin-top: 50px;
+  padding-left: 15px;
+  font-weight: bolder;
+
+}
+
+a {
+  text-decoration: underline;
+  color: rgb(32, 17, 2);
+  font-style: oblique;
+}
+
+main{
+
+  margin-top: 30px;
+
+}
+main img{
+
+  text-align: center;  
+  float: left;
+  padding-right: 10px;
+}
+main p {
+
+  border: 3px solid rgb(177, 99, 11);
+  color: rgb(32, 17, 2);
+  margin-top: 30px;
+  overflow: scroll;
+  height: 388px;
+  line-height: 25px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  background: rgb(189, 129, 61);
+  border-radius: 10px;
+
+}
+
+main pre img{
+
+float: right;
+padding: 0px;
+height: 200px;
+
+}
+
+.info{
+  border: 3px solid rgb(177, 99, 11);
+  margin: 0px auto;
+  height: 200px;
+  color: rgb(32, 17, 2);
+  border-style: dashed;
+  background: rgb(189, 129, 61);
+  border-radius: 10px;
+
+}
+
+#opening-hours{
+
+  color:rgb(227, 228, 169);
+  border: 3px solid rgb(177, 99, 11);
+  height: 250px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 25px;
+  padding-top: 0px;
+  padding: 10px;
+  border-style: dotted;
+  border-radius: 10px;
+
+}
+
+#locations {
+
+  border: 3px groove rgb(177, 99, 11);
+  background: rgb(189, 129, 61);
+  border-radius: 20px;
+
+}
+
+pre h2 a {
+
+  color: blue;
+}
+
+pre ul li {
+
+  padding: 10px;
+  color: rgb(32, 17, 2);
+  border: 3px solid rgb(177, 99, 11);
+  border-style: dotted;
+  border-radius: 50px;
+  font-family: monospace;
+  font-size: xx-large;
+  margin-top: 30px;
+  align-content: center;
+}
+
+footer{
+  background-color: rgb(32, 17, 2);
+  color: rgb(177, 99, 11);
+  border: 3px solid rgb(177, 99, 11);
+  text-align: center;
+  font-size:x-large;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 20px;
+
+}
+
+button {
+  border: 3px solid rgb(177, 99, 11);
+  padding: 10px 30px;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: 350ms;
+  cursor: pointer;
+  border-radius: 30px;
+  float: right;
+
+}
+
+button:hover {
+  background: yellow;
+}
+
+
+pre h1 {
+
+text-decoration: underline ;
+margin-bottom: 20px;
+background-color: rgb(32, 17, 2);
+color: rgb(177, 99, 11);
+text-align: center;
+}
+
