@@ -42,3 +42,13 @@ table td {
     border: 3px solid black;
     border-radius: 5px;
 }
+
+table th:hover {
+    background-color: aqua;
+    color: navy;
+}
+
+table td:hover {
+    background-color: plum;
+    color: navy;
+}
