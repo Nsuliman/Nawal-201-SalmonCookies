@@ -1,54 +1,107 @@
-body {
-    color: white;
-    background-color: rgb(2, 58, 46);
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    background-color: rgb(224, 164, 72);
+    font-family: Helvetica;
 }
 
-header {
+
+    h2 {
     text-align: center;
-    align-content: center;
-    font-size: larger;
-    margin: 30px;
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 30px;
+    color: #fff;
+    background-color: rgb(32, 17, 2);
+    border-radius: 10px;
+    border-style: groove;
+    border: 3px solid rgb(177, 99, 11);
+    padding: 20px;
+    font-family: 'Fjalla One', sans-serif;
 }
-
-section {
+    table, th,td {
     text-align: center;
-    border: 5px solid black;
-    padding: 10px;
-    background-color: white;
-    color: black;
+    border: 3px solid rgb(4, 47, 53);
+    background-color: rgb(245, 171, 101);
+    font-family: Arial;
+  }
+    table{
+
+    width: 100%;
+  }
+
+    th {
+    height: 25px;
+  }
+
+    fieldset {
+
+    background-color: rgb(245, 171, 101);
+    border: 3px solid rgb(4, 47, 53);
+    border-radius: 20px;
+    margin-top: 30px;
+    font-family: Georgia;
+    padding: 20px;
+    font-style: oblique;
 }
 
-table {
-    text-align: center;
-    margin: 0px auto;
-    padding: 10px 10px;
-}
+    fieldset img{
+    float: right;
+    border: 3px solid rgb(4, 47, 53);
+    border-radius: 20px;
+  }
 
-table th {
-    background-color: rgb(3, 94, 41);
-    color: white;
-    border: 3px solid black;
-    border-radius: 5px;
-    padding: 5px;
-}
+    legend {
+    color: #fff;
+    background-color: rgb(32, 17, 2);
+    border: 3px solid rgb(4, 47, 53);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: Georgia;
+  }
 
-table td {
-    background-color: rgb(168, 168, 47);
-    border: 3px solid black;
-    border-radius: 5px;
-}
+    tr:hover {
+      background-color: rgb(105, 20, 105);
+    }
 
-table th:hover {
-    background-color: aqua;
-    color: navy;
-}
+    button {
+        border: 3px dotted rgb(226, 171, 226) ;
+        padding: 25px;
+        background: #000;
+        color: #fff;
+        border-radius: 30px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 545px;
+        transition: 350ms;
+        cursor: pointer;
+        text-align: center;   
+       }
+      
+      button:hover {
+        background: orchid;
+      }
+    
+      footer{
+        background-color: rgb(32, 17, 2);
+        color: rgb(177, 99, 11);
+        border: 3px solid rgb(177, 99, 11);
+        text-align: center;
+        font-size:x-large;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px;
+      
+      }
 
-table td:hover {
-    background-color: plum;
-    color: navy;
-}
+      input[type=text] {
+        border: 3px solid rgb(177, 99, 11);
+        cursor: pointer;
+        padding: 15px;
+        
+     }
+
+     input[type=number] {
+        border: 3px solid rgb(177, 99, 11);
+        cursor: pointer; 
+        padding: 15px;
+     }
+
+     
