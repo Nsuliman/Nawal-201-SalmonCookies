@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(224, 164, 72);
+    font-family: Helvetica;
+}
+
+
+    h2 {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(32, 17, 2);
+    border-radius: 10px;
+    border-style: groove;
+    border: 3px solid rgb(177, 99, 11);
+    padding: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+    table, th,td {
+    text-align: center;
+    border: 3px solid rgb(4, 47, 53);
+    background-color: rgb(245, 171, 101);
+    font-family: Arial;
+  }
+    table{
+
+    width: 100%;
+  }
+
+    th {
+    height: 25px;
+  }
+
+    fieldset {
+
+    background-color: rgb(245, 171, 101);
+    border: 3px solid rgb(4, 47, 53);
+    border-radius: 20px;
+    margin-top: 30px;
+    font-family: Georgia;
+    padding: 20px;
+    font-style: oblique;
+}
+
+    fieldset img{
+    float: right;
+    border: 3px solid rgb(4, 47, 53);
+    border-radius: 20px;
+  }
+
+    legend {
+    color: #fff;
+    background-color: rgb(32, 17, 2);
+    border: 3px solid rgb(4, 47, 53);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: Georgia;
+  }
+
+    tr:hover {
+      background-color: rgb(105, 20, 105);
+    }
+
+    button {
+        border: 3px dotted rgb(226, 171, 226) ;
+        padding: 25px;
+        background: #000;
+        color: #fff;
+        border-radius: 30px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 545px;
+        transition: 350ms;
+        cursor: pointer;
+        text-align: center;   
+       }
+      
+      button:hover {
+        background: orchid;
+      }
+    
+      footer{
+        background-color: rgb(32, 17, 2);
+        color: rgb(177, 99, 11);
+        border: 3px solid rgb(177, 99, 11);
+        text-align: center;
+        font-size:x-large;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px;
+      
+      }
+
+      input[type=text] {
+        border: 3px solid rgb(177, 99, 11);
+        cursor: pointer;
+        padding: 15px;
+        
+     }
+
+     input[type=number] {
+        border: 3px solid rgb(177, 99, 11);
+        cursor: pointer; 
+        padding: 15px;
+     }
+
+     
