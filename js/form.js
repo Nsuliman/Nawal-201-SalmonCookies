@@ -1,6 +1,5 @@
 'use strict';
 
-
 var megaTotal = 0;
 var newarray = [];
 var rowData1;
@@ -13,6 +12,7 @@ function Locations(nameoflocation, min, max, avgCookieSale) {
     this.maxCust = max;
     this.minCust = min;
     this.avgCookieSale = avgCookieSale;
+
     this.totalCookies = 0;
     this.genArray = [];  // cookies number per hour 
 
@@ -33,24 +33,13 @@ shopF.addEventListener('submit', function (event) {
     var avgCookieSale = parseFloat(event.target.avgCookieSale.value);
     console.log('avg ', avgCookieSale);
 
-    var newLoc = new Locations(nameofloc, minCust, maxCust, avgCookieSale);
+    var newLoc = new Location(nameofloc, minCust, maxCust, avgCookieSale);
         newLoc.cookiesValues();         // calculate the cookies for the new object 
         console.log(newLoc);
         addshop (newLoc);
         newarray.push(nameofloc);
         console.log('new locaaaaation' , newarray.length);
 
-        // if (newarray==newarray.length)
-        // {
-
-        // var newLoc1 = new Locations(nameofloc, minCust, maxCust, avgCookieSale);
-        // newLoc1.cookiesValues();         // calculate the cookies for the new object 
-        // console.log(newLoc1);
-        // addshop2 (newLoc1);
-        // }
-
-        
-   
 }); // end of event function 
 
 
@@ -83,59 +72,31 @@ function addshop (newLoc)
 
 }
 
-// function addshop2 (newLoc1)
-// {
-//     var rowCount = table.rows.length;
-//     console.log('table rooooow' , rowCount);
-//     table.deleteRow(rowCount-1);
-    
-//     //table.removeChild(rowData);   // remove last row in the table to addd the new object 
-//     newLoc.table();                 // add the new object to the table 
-
-//     rowData1 = document.createElement('tr');
-//     table.appendChild(rowData1);
-//     var total2 = document.createElement('td');
-//     rowData1.appendChild(total2);
-//     total2.textContent = 'Totals';
-
-//     for (var i = 0; i <= 13; i++) {
-//         var total2 = document.createElement('td');
-//         rowData1.appendChild(total2);
-//         total2.textContent = seattle.genArray[i] + tokyo.genArray[i] + dubai.genArray[i] + paris.genArray[i] + lima.genArray[i] + newLoc.genArray[i] +newLoc1.genArray[i] ;
-        
-//     }
-
-//     var total2 = document.createElement('td');
-//     rowData1.appendChild(total2);
-
-//     total2.textContent = seattle.totalCookies + tokyo.totalCookies + dubai.totalCookies + paris.totalCookies + lima.totalCookies  + newLoc.totalCookies + newLoc1.totalCookies;
-
-// }
 ///////////////////// The Objects //////////////////////////
 
-var seattle = new Locations('seattle', 23, 65, 6.3);
+var seattle = new Location('seattle', 23, 65, 6.3);
 console.log(' seattle object : ', seattle);
 
-var tokyo = new Locations('tokyo', 3, 24, 1.2);
+var tokyo = new Location('tokyo', 3, 24, 1.2);
 console.log(' tokyo object : ', tokyo);
 
-var dubai = new Locations('dubai', 11, 38, 3.7);
+var dubai = new Location('dubai', 11, 38, 3.7);
 console.log(' dubai object : ', dubai);
 
-var paris = new Locations('paris', 20, 38, 2.3);
+var paris = new Location('paris', 20, 38, 2.3);
 console.log(' paris object : ', paris);
 
-var lima = new Locations('lima', 2, 16, 4.6);
+var lima = new Location('lima', 2, 16, 4.6);
 console.log(' Lima object : ', lima);
 
 ///////////////////////// First coloum anf row in table ////////////
 var locationsNames = [seattle, tokyo, dubai, paris, lima];
 var hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
-var totalCookiesOfLocations = [];
+var totalDailyCookiesOfLoc = [];
 
 
 ////////////////// Calculate the Random number /////////////////////
-Locations.prototype.randomInRange = function () {
+Location.prototype.randomInRange = function () {
 
     var range = this.maxCust - this.minCust;
     //console.log('range',range);
@@ -147,7 +108,7 @@ Locations.prototype.randomInRange = function () {
 //console.log('na',na);
 
 //////////////////////////// Calculate cookies per hour //////////////
-Locations.prototype.cookiesValues = function () {
+Location.prototype.cookiesValues = function () {
 
     for (var i = 0; i < 14; i++) {
         var SeattleRNC = this.randomInRange(this.minCust, this.maxCust);
@@ -193,7 +154,7 @@ var totalCookiesLoc = document.createElement('th');  /// put the last header col
 tabRow.appendChild(totalCookiesLoc);
 totalCookiesLoc.textContent = ' Daily Location Total ';
 
-Locations.prototype.table = function () {
+Location.prototype.table = function () {
 
     var rowData = document.createElement('tr');
     table.appendChild(rowData);
