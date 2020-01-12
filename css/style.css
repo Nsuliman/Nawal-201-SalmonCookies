@@ -28,8 +28,13 @@ p {
     padding: 15px;
     background-color: rgb(4, 156, 156);
     width: 250px;
+    border-radius: 20px;
 }
 
 section {
-    text-align: left;
+    text-align: center;
+    border: 5px solid black;
+    padding: 10px;
+    background-color: white;
+    color: black;
 }
