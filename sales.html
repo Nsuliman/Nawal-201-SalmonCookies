@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Cookies - Locations - System </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h2> Add A shop To Our System </h2>
+        <a href="index.html"> Back To Home Page </a>
+
+        <div>
+            <form id="fcookies">
+                <!-- fieldset : to group all information in one place as you like to divided your web pages  -->
+                <fieldset>
+                    <img src="img/cutter.jpeg" alt="family">
+                    <!-- legend: to heading some info together  , every single text input -->
+                    <legend> The Needed Information To Add New Shop </legend><br></br>
+
+                    <!-- label & input : to add the text input for each one  -->
+                    <label> New Shop Name :</label>
+                    <input type="text" name="nameofloc" placeholder="Enter New Shop Name"
+                        style="width:300px"><br></br><br></br>
+                    <label> The Maximum Number of Customer Per Hour : </label>
+                    <input type="number" name="maxCust" placeholder="Enter Any Number"
+                        style="width:300px"><br></br><br></br>
+                    <label> The Minimum Number of Customer Per Hour : </label>
+                    <input type="number" name="minCust" placeholder="Enter Any Number"
+                        style="width:300px"><br></br><br></br>
+                    <label> The average number of cookies purchased per customer : </label>
+                    <!-- the step is to take a decimel numbers with dot  -->
+                    <input type="number" step="0.1" name="avgCookieSale" placeholder="Enter Any Number"
+                        style="width:300px"><br></br><br></br>
+                    <!-- <span>list the average by using colon </span> -->
+                    <br></br>
+                    <button type="submit"> Click To Add New Shop </button>
+                </fieldset>
+
+            </form>
+        </div>
+
+
+        <!-- To show the form result  -->
+        <h2> All Shops Information </h2>
+
+        <!-- This part on Java to inform the form output  -->
+        <div id="cookieJQ">
+
+        </div>
+
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/cookie.js"></script>
+</body>
+
+<footer>
+    Copyright &copy; Pat's salmon Cookies 2020 - Nawal Suliman
+</footer>
+
+</html>
