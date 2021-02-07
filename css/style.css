@@ -1,0 +1,40 @@
+body {
+    color: white;
+    background-color: rgb(2, 58, 46);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+    margin: 30px;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+p {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    padding: 15px;
+    background-color: rgb(4, 156, 156);
+    width: 250px;
+    border-radius: 20px;
+}
+
+section {
+    text-align: center;
+    border: 5px solid black;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
